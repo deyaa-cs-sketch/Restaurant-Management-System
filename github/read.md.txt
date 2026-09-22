@@ -1,0 +1,174 @@
+# 🍽️ Restaurant Management System
+
+A simple **Restaurant Management System** developed in **C++** using Object-Oriented Programming (OOP) concepts.
+
+The program allows the restaurant to manage its menu, customers, orders, and payments through a simple console-based interface.
+
+## 📌 Features
+
+* ➕ Add new menu items
+* 📋 Display the restaurant menu
+* 🧾 Create customer orders
+* 👤 Store customer name and phone number
+* 💳 Handle different payment types
+* 🧮 Automatically calculate:
+
+  * Subtotal
+  * Tax (16%)
+  * Service charge (10%)
+  * Final total
+* 📦 Store and display all orders
+* 🚪 Exit the program safely
+
+## 🛠️ Technologies Used
+
+* **C++**
+* **Object-Oriented Programming (OOP)**
+* `iostream`
+* `vector`
+* `string`
+
+## 🧩 Classes
+
+The project contains the following main classes:
+
+### `MenuItem`
+
+Represents a food or drink item in the restaurant menu.
+
+**Attributes:**
+
+* Item name
+* Price
+* Category
+
+### `Customer`
+
+Stores customer information.
+
+**Attributes:**
+
+* Name
+* Phone number
+
+### `Payment`
+
+Handles payment information.
+
+**Attributes:**
+
+* Payment type
+* Amount
+
+### `Order`
+
+Represents a customer's order.
+
+It manages:
+
+* Customer information
+* Ordered items
+* Subtotal
+* Tax
+* Service charge
+* Final total
+* Payment
+
+### `Restaurant`
+
+Manages the restaurant's:
+
+* Menu
+* Orders
+* Restaurant name
+
+## 💰 Calculation
+
+The program calculates the final order amount using:
+
+```text
+Tax = Subtotal × 16%
+
+Service Charge = Subtotal × 10%
+
+Final Total = Subtotal + Tax + Service Charge
+```
+
+## ▶️ How to Run
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/YOUR-USERNAME/restaurant-management-system.git
+```
+
+### 2. Open the project
+
+Open the `.cpp` file using a C++ IDE such as:
+
+* Visual Studio Code
+* Code::Blocks
+* Visual Studio
+* Dev-C++
+
+### 3. Compile
+
+Using g++:
+
+```bash
+g++ main.cpp -o restaurant
+```
+
+### 4. Run
+
+```bash
+./restaurant
+```
+
+On Windows:
+
+```bash
+restaurant.exe
+```
+
+## 📋 Program Menu
+
+```text
+1. Add Menu Item
+2. Show Menu
+3. Create Order
+4. Show Orders
+0. Exit
+```
+
+## 🎯 OOP Concepts Used
+
+This project demonstrates several Object-Oriented Programming concepts:
+
+* Classes and Objects
+* Constructors
+* Encapsulation
+* Composition
+* Vectors
+* Member Functions
+* `const` Member Functions
+* Object Interaction
+
+## 📂 Project Structure
+
+```text
+Restaurant-Management-System/
+│
+├── main.cpp
+└── README.md
+```
+
+## 👨‍💻 Author
+
+**Ahmad Al-Sawalha**
+
+C++ / Cybersecurity Student
+
+---
+
+⭐ If you find this project useful, feel free to give it a star!
